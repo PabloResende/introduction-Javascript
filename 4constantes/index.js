@@ -19,7 +19,12 @@ const resultado = numero1 * numero2;
 const segundoResultado = resultado * 2;
 
 console.log(resultado);
+console.log(typeof segundoResultado);
 console.log(segundoResultado);
+//typeoff serve para ver o tipo
 
-//resultado é 50
-//resultado é 100
+//resultado:
+
+//50
+//number
+//100

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <script>
+        console.log('hello world')
+        // é recomendado por a tag script no  final do body
+        // isso pq pode retardar o carregamento do site
+    </script>
+</head>
+
+<body>
+<script>
+    console.log("esse trecho só aparece no console do navegador")
+    // má forma de fazer essa mescla de linguagens
+    // uma forma melhor é fazer apenas um 'link' entre arquivos
+    // isso é feito abrindo as tags script e usando 'src' para
+    // fazer esse 'link'
+</script>
+<script src="index.js"></script>
+</body>
+
+</html>

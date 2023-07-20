@@ -13,3 +13,8 @@ console.log(Math.random(1, 3, 5, -1500, 1, 5, 20, -50)); // random pega qualquer
 
 console.log(Math.pow(2, 10)); //potenciação, no caso 2 elevado a 10
 console.log(2 ** 10); //outra forma de fazer potenciação
+
+console.log(num1 ** (1/2)); //assim que se faz raiz
+
+// ATENÇÃO: o java é burro e não sabe que dividir algo pro zero é impossível
+// ao faze-lo o java responde que 'infinity' e true

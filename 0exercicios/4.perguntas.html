@@ -10,15 +10,33 @@
   
   <script>
   const nome = prompt('Digite seu nome completo:');
-  document.body.innerHTML += `Seu nome é: ${nome}<br />`;
-  document.body.innerHTML += `Seu nome tem ______ letras <br />`;
-  document.body.innerHTML += `A segunda letra do seu nome é: ______<br />`;
-  document.body.innerHTML += `Qual o primeiro índice da letra LETRA no seu nome? ______<br />`;
-  document.body.innerHTML += `Qual o último índice da letra LETRA no seu nome? ______<br />`;
-  document.body.innerHTML += `As últimas 3 letras do seu nome são: ______<br />`;
-  document.body.innerHTML += `As palavras do seu nome são: ______<br />`;
-  document.body.innerHTML += `Seu nome com letras maiúsculas: ______<br />`;
-  document.body.innerHTML += `Seu nome com letras minúsculas: ______<br />`;
+  document.body.innerHTML = `Seu nome é: ${nome}<br />`;
+  //no primeiro basta colocar apenas '=' pois o documento html já está vazio
+  
+  document.body.innerHTML += `Seu nome tem ${nome.length} letras <br />`;
+  //length é para contar
+
+  document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]}<br />`; 
+  //este serve para contar o índice, no caso, 0,1,2,3, e a segunda letra é 1
+
+  document.body.innerHTML += `Qual o primeiro índice da letra LETRA no seu nome? ${nome.indexOf('a')}<br />`;
+  // indexOf irá procurar onde aparece a letra 'a' primeiro, pode ser outra letra
+
+  document.body.innerHTML += `Qual o último índice da letra LETRA no seu nome? ${nome.lastIndexOf('a')}<br />`;
+  // 'last' irá mostrar a ultima letra 'a' no nome
+
+  document.body.innerHTML += `As últimas 3 letras do seu nome são: ${nome.slice(-3)}<br />`;
+  // 'slice' irá pegar o tamanho da string menos 3, e como o fim não foi especificado ele irá direto pro fim
+
+  document.body.innerHTML += `As palavras do seu nome são: ${nome.split(' ')}<br />`;
+  // split irá pegar todas as palavras da string
+
+  document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toUpperCase}<br />`;
+  //'uppercase' faz as letras ficarem maiúsculas
+
+  document.body.innerHTML += `Seu nome com letras minúsculas: ${nome.toLowerCase}<br />`;
+  //'uppercase' faz as letras ficarem minúsculas
+
   </script>
 </body>
 </html>

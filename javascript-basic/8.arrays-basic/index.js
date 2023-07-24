@@ -1,6 +1,6 @@
             //012345678910
 const nome = 'Pablo Silva'
-                // 0       1    2    3    4   
+            //     0      1     2   3     4   
 const alunos = ['luiz', 'Anna', 1, true, null]
 //não é uma boa prática de programação misturar vários elementos
 //em um único array

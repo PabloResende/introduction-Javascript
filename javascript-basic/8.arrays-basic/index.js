@@ -1,6 +1,5 @@
             //012345678910
 const nome = 'Pablo Silva'
-
                 // 0       1    2    3    4   
 const alunos = ['luiz', 'Anna', 1, true, null]
 //não é uma boa prática de programação misturar vários elementos
@@ -20,3 +19,11 @@ alunos[1] = 'Pablo'
 console.log(alunos)
 console.log((alunos[1]),'ama muito', (alunos[2]),(alunos[6]),(alunos[7]),(alunos[0]),'!!')
 //Pablo ama muito Anna Luíza Estácio Lacerda
+alunos.pop()//remove o último
+//é possível armazenar o elemento removido em uma constante
+//e então chamá lo de acordo com o nome dado a constante atrelado ao mesmo
+//é claro que essa associação deve ser feita antes de remover o elemento
+console.log(alunos)
+//para deletar qualquer elemento pode se usar:
+delete alunos[3]
+console.log(alunos)

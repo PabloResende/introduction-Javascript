@@ -4,7 +4,6 @@ const nome = 'Pablo Silva'
 const alunos = ['luiz', 'Anna', 1, true, null]
 //não é uma boa prática de programação misturar vários elementos
 //em um único array
-
 //para acessar um índice específico do array basta pro colchetes com o índice respectivo
 console.log(alunos[1]) // resultado 'Anna' (sem as aspas)
 console.log(alunos.length); //contará quantos índices tem no array, que é 5
@@ -26,4 +25,12 @@ alunos.pop()//remove o último
 console.log(alunos)
 //para deletar qualquer elemento pode se usar:
 delete alunos[3]
-console.log(alunos)
+console.log(alunos) //[ 'Lacerda', 'Pablo', 'Anna', <1 empty item>, true, null, 'Luiza' ]
+console.log(alunos.slice(0,4))//[ 'Lacerda', 'Pablo', 'Anna', <1 empty item> ]
+//slice serve para fatiamento
+console.log(typeof alunos) //object
+//retorna objeto, e não array
+//em java um array é um objeto
+console.log(alunos instanceof Array) //True
+//essa é uma forma de descobrir se você estpa usando array
+//se for True é um array

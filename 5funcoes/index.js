@@ -17,9 +17,31 @@ console.log(resultado) // aqui é para visualizar a constante que atribuiu valor
 //outra forma de fazer funções:
 
 const raiz = function (n) {
-    return n ** 0.5 //ou 1/2
+    return n ** 0.5
 }; //precisa terminar com ; nesse jeito de fazer
 
-console.log(raiz(9));
+console.log(raiz(9)); // você passa o argumento aqui
 console.log(raiz(25));
 console.log(raiz(65));
+
+// --------------------------------------------- // ------------------------------------------------------ //
+
+//arrow function (maneira moderna):
+
+const raiz2  = (n) => { //tem esse nome porque parece uma seta
+    return n ** 0.5; 
+}; //precisa terminar com ; nesse jeito de fazer
+
+console.log(raiz2(9));
+console.log(raiz2(25));
+console.log(raiz2(65));
+
+//ultra mega arrow function:
+
+const raiz3 = n => n ** 0.5;
+//serve quando a function é muito pequena
+
+console.log(raiz2(9));
+console.log(raiz2(25));
+console.log(raiz2(65));
+

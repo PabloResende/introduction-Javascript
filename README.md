@@ -1,1 +1,1 @@
-# introduction-Java
+learning JavaScript from scratch 😎 

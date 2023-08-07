@@ -4,7 +4,7 @@ const nome = 'Pablo Silva'
 const alunos = ['luiz', 'Anna', 1, true, null]
 //não é uma boa prática de programação misturar vários elementos
 //em um único array
-//para acessar um índice específico do array basta pro colchetes com o índice respectivo
+//para acessar um índice específico do array basta pôr colchetes com o índice respectivo
 console.log(alunos[1]) // resultado 'Anna' (sem as aspas)
 console.log(alunos.length); //contará quantos índices tem no array, que é 5
 alunos[alunos.length] = 'Luiza' // além de contar também irá adicionar 'Luiza' ao array

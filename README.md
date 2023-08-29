@@ -1,1 +1,1 @@
-learning JavaScript from scratch 😎 
+aprendendo javascript do zero😎 

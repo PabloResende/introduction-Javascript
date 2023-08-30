@@ -13,5 +13,7 @@ if (pontoUsuario >= 1000) {
 
 const nivelUsuario = pontuacaoUsuario >= 1000 ? 'usuário VIP' : 'Usuário normal';
 
+//outro jeito:
+
 const corUsuario = 'Pink';
 const corPadrao = corUsuario || 'Preta'

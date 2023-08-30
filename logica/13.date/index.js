@@ -30,7 +30,7 @@ console.log("Hora", data.getHours()); // Hora 14
 console.log("Min", data.getMinutes()); // Min 15
 console.log("Seg", data.getSeconds()); // Seg 42
 console.log("Ms", data.getMilliseconds()); // Ms 192
-console.log("Dia semana", data.getDay()); //dia semana 3
+console.log("Dia semana", data.getDay()); //dia semana 3 ou seja, quarta
 console.log(Date.now()); //1693415742199 é a contagem do marco zero até hoje em milesegundos
 console.log(data.toString()); //Wed Aug 30 2023 14:15:42 GMT-0300 (Brasilia Standard Time)
 

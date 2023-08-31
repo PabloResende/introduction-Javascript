@@ -1,6 +1,6 @@
 // regras:
 
-//não podemos criar constantes com palavras reservadas
+// não podemos criar constantes com palavras reservadas
 // constante precisam ter nomes significativos;
 // constante não podem começar com números;
 // também não podem ter - ou espaços;

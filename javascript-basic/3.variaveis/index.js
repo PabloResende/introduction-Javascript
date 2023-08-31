@@ -11,7 +11,7 @@
 // não podemos redeclarar variáveis com let, 
 // mas é possível faze-lo de outra forma;
 // não utilize var e sim let.
-//não podemos criar variáveis com palavras reservadas
+// não podemos criar variáveis com palavras reservadas como class
 
 let nome = 'joão';
 

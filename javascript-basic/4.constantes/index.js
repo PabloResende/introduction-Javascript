@@ -21,10 +21,10 @@ const segundoResultado = resultado * 2;
 console.log(resultado);
 console.log(typeof segundoResultado);
 console.log(segundoResultado);
-//typeoff serve para ver o tipo
+// typeoff serve para ver o tipo
 
-//resultado:
-
-//50
-//number
-//100
+// resultado:
+ 
+// 50
+// number
+// 100

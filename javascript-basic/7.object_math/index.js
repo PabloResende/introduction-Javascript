@@ -11,8 +11,8 @@ console.log(Math.min(1, 3, 5, -1500, 1, 5, 20, -50)); // min pega o menor númer
 
 console.log(Math.random(1, 3, 5, -1500, 1, 5, 20, -50)); // random pega qualquer número da lista
 
-console.log(Math.pow(2, 10)); //potenciação, no caso 2 elevado a 10
-console.log(2 ** 10); //outra forma de fazer potenciação
+console.log(Math.pow(2, 10)); // potenciação, no caso 2 elevado a 10
+console.log(2 ** 10); // outra forma de fazer potenciação
 
 console.log(num1 ** (1/2)); //assim que se faz raiz
 

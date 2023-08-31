@@ -1,9 +1,9 @@
 // 'if' pode ser usado sozinha e apenas ele
-//pode ter vários 'else if', porém apenas um 'else' 
-//pode se usar apenas 'if' e 'else' ou apenas 'if' e 'else if'
+// pode ter vários 'else if', porém apenas um 'else' 
+// pode se usar apenas 'if' e 'else' ou apenas 'if' e 'else if'
 
 
-//jeito não clean:
+// jeito não clean:
 
 const hora = 10;
 
@@ -28,4 +28,4 @@ const message =
 
 console.log(message);
 
-//Obs: faça os códigos sempre em inglês!
+// Obs: faça os códigos sempre em inglês!

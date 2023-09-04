@@ -1,5 +1,5 @@
 const nome = 'Pablo';
-const peso = 59;
+const peso = 59; 
 const altura = 1.65;
 
 let imc = peso / (altura * altura);

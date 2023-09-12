@@ -16,7 +16,7 @@ for(let i = 0; i <= 5; i++) {
     // enquanto i for menor ou igual á 5 adicina mais 1
 } 
 /*
- E então a iteração é adicionado ao final de 'linha'
+e então a iteração é adicionado ao final de 'linha'
 agora ao invés de usar 6 console.log
 se usa uma simples estrutura de repetição:
 linha 0
@@ -26,5 +26,11 @@ linha 3
 linha 4
 linha 5
 */
+
+// para fazer de forma reversa:
+
+for( let i = 100; i >= 0; i -= 1) {
+    console.log(i)
+}
 
 

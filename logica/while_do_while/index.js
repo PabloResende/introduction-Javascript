@@ -25,4 +25,7 @@ function random(min, max) { //função que pega um valor aleatório entre um ran
 let rand = random(1, 50);
 console.log(rand)
 
-// o do while roda o código depois checa se a condição é verdadeira
+
+// do { faça enquanto...
+//  while( condição... )
+// }  o do while roda o código depois checa se a condição é verdadeira

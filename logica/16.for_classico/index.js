@@ -39,7 +39,7 @@ for(let i = 0; i <= 10; i++) {
     console.log(par)
 } // se o número é divisível por 2 retorna 'par' se não retorna 'impar'
 
-const frutas = ['maça', 'pêra', 'abacaxi'];
+const frutas = ['maça', 'pera', 'abacaxi'];
 
 for(let i = 0; i < frutas.length; i++) { // conta quantos índices tem no array usando length
     console.log(`índice ${i}`, frutas[i])

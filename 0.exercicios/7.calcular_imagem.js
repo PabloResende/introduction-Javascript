@@ -1,10 +1,17 @@
-// jeito foda de fazer
+// jeito sênior
 
 const ePaisagem = (x, y) =>
+  x > y ? "está em modo paisagem" : "não está em modo paisagem";
+
+console.log(ePaisagem(1920, 1080));
+
+// jeito específico porém ainda foda:
+
+const ePaisagemFoda = (x, y) =>
   x === 1608 && y === 408
     ? "está em modo paisagem"
     : "não está em modo paisagem";
-console.log(ePaisagem(1608, 408));
+console.log(ePaisagemFoda(1608, 408));
 
 // jeito nelson
 

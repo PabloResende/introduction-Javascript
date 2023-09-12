@@ -10,4 +10,4 @@ const Fizz = (x) => x % 3 === 0 ? 'Fizz' : x;
 const Buzz = (y) => y % 5 === 0 ? 'Buzz' : y;
 const FizzBuzz = (z) => z % 5 && 3 === 0 ? 'FizzBuzz' : z;
 
-console.log(Fizz(9), Buzz(10), FizzBuzz(25))
+console.log(Fizz(9), Buzz(10), FizzBuzz(9))

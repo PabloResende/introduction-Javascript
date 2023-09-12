@@ -30,7 +30,7 @@ function max3(x, y) {
   
   console.log(max3(10, 15));
   
-  // senior //
+  // sênior //
   
   const max4 = (x, y) => x > y ? x : y;
   console.log(max4(24, 42));

@@ -2,9 +2,7 @@
 // número é divisível por 3 = fizz
 // número é divisível por 5 = buzz
 // número é divisível por 2 e por 5 = FizzBuzz
-// Número não é divisível por 3 nem por 5 retorna o próprio número
-// checa se é um número
-// use a função com números de 10 a 100
+// se der false retorna o próprio número
 
 const Fizz = (x) => x % 3 === 0 ? 'Fizz' : x;
 const Buzz = (y) => y % 5 === 0 ? 'Buzz' : y;

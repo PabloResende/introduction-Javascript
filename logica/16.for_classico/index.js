@@ -28,8 +28,20 @@ for(let i = 0; i <= 5; i++) {
 
 // para fazer de forma reversa:
 
-for( let i = 100; i >= 0; i -= 1) {
+for( let i = 100; i >= 0; i -= 10) { //faz a iteração de 10 em 10
     console.log(i)
 }
 
+// para ver se é par ou impar:
+
+for(let i = 0; i <= 10; i++) {
+    const par = i % 2 === 0 ? 'par' : 'impar;'
+    console.log(par)
+} // se o número é divisível por 2 retorna 'par' se não retorna 'impar'
+
+const frutas = ['maça', 'pêra', 'abacaxi'];
+
+for(let i = 0; i < frutas.length; i++) { // conta quantos índices tem no array usando length
+    console.log(`índice ${i}`, frutas[i])
+} // também é possível fazer iterações com arrays
 

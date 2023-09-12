@@ -15,17 +15,16 @@ for(let i = 0; i <= 5; i++) {
     console.log(`linha ${i}`)
     // enquanto i for menor ou igual á 5 adicina mais 1
 } 
-/*
-e então a iteração é adicionado ao final de 'linha'
-agora ao invés de usar 6 console.log
-se usa uma simples estrutura de repetição:
-linha 0
-linha 1
-linha 2
-linha 3
-linha 4
-linha 5
-*/
+
+// e então a iteração é adicionado ao final de 'linha'
+// agora ao invés de usar 6 console.log
+// se usa uma simples estrutura de repetição:
+// linha 0
+// linha 1
+// linha 2
+// linha 3
+// linha 4
+// linha 5
 
 // para fazer de forma reversa:
 

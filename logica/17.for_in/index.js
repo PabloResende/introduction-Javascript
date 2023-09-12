@@ -13,3 +13,7 @@ const pessoa = {
 for( let i in pessoa) {
     console.log(pessoa[i]) //pablo silva
 }
+
+// for of não funciona com objetos
+// for in retorna índice ou chave (arrrays e objetos)
+// for clássico funciona com iterações (arrays e strings) 

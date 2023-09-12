@@ -45,3 +45,7 @@ for(let i = 0; i < frutas.length; i++) { // conta quantos índices tem no array 
     console.log(`índice ${i}`, frutas[i])
 } // também é possível fazer iterações com arrays
 
+
+// for of não funciona com objetos
+// for in retorna índice ou chave (arrrays e objetos)
+// for clássico funciona com iterações (arrays e strings) 

@@ -4,4 +4,4 @@ const pausar = document.querySelector('.pausar')
 const zerar = document.querySelector('.zerar')
 
 iniciar.addEventListener('click', function(event) {
-})
+})  

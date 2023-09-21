@@ -12,7 +12,7 @@ function max(x, y) {
 
 const maior = max(10, 20);
 console.log(maior);
-
+ 
 // júnior //
 
 function max2(x, y) {

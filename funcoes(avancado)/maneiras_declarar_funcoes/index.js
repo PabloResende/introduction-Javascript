@@ -17,7 +17,7 @@ souUmDado() // uma variável pode receber uma função, e então ser chamada com
 
 function executaFuncao(funcao) {
     console.log('essa função executa outra função')
-    funcao()
+    funcao() // é possível para uma função como argumento para ser executada
 }
 
 executaFuncao(souUmDado)

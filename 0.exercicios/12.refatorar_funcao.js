@@ -1,4 +1,4 @@
-const error = "número, operador ou acumulador inválido";
+const erro = "número, operador ou acumulador inválido";
 
 const calculo = (operador, acumulador, numeros) => {
   for (let numero of numeros) {
@@ -10,7 +10,7 @@ const calculo = (operador, acumulador, numeros) => {
       ? (acumulador /= numero)
       : operador === "-"
       ? (acumulador -= numero)
-      : error;
+      : erro;
     console.log(acumulador);
   }
 };
@@ -18,3 +18,11 @@ const calculo = (operador, acumulador, numeros) => {
 calculo("+", 1, [20, 30, 40, 50]);
 
 // refatorar essa bagaça kk
+
+const error = "invalid number or operator";
+
+const accumulator = 0;
+
+const calculation = (operator, number) => {
+  
+}

@@ -33,11 +33,17 @@ const error = "número, operador ou acumulador inválido";
 
 const calculo = (operador, acumulador, numeros) => {
   for (let numero of numeros) {
-    operador === "+" ? (acumulador += numeros) : error && operador === "*"
-      ? (acumulador *= numeros)
-      : error; 
-      console.log(acumulador)
+    operador === "+"
+      ? (acumulador += numero)
+      : operador === "*"
+      ? (acumulador *= numero)
+      : operador === "/"
+      ? (acumulador /= numero)
+      : operador === "-"
+      ? (acumulador -= numero)
+      : error;
+    console.log(acumulador);
   }
 };
 
-calculo("+", 1, [20, 30, 40, 50]);
+calculo("-", 1, [20, 30, 40, 50]);

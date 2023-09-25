@@ -7,25 +7,26 @@ funcao(2); // somente o valor de A está sendo passado, portanto B irá assumir 
 
 function conta(operador, acumulador, ...numeros) {
   // os três pontinhos antes de 'numero' dizem que após os índices de 'operador' e de 'acumulador' todo o resto pertence á 'numeros'
-  for (let numero of numeros) // com 'of' ele pega os numeros de 'numero' e com 'in' pega os índices
+  for (let numero of numeros) {
+    // com 'of' ele pega os numeros de 'numero' e com 'in' pega os índices
     if (operador === "+") {
-      acumulador += numeros;
+      acumulador += numero;
     }
-  if (operador === "-") {
-    acumulador -= numeros;
+    if (operador === "-") {
+      acumulador -= numero;
+    }
+    if (operador === "/") {
+      acumulador /= numero;
+    }
+    if (operador === "*") {
+      acumulador *= numero;
+    }
+    console.log(acumulador);
   }
-  if (operador === "/") {
-    acumulador /= numeros;
-  }
-  if (operador === "*") {
-    acumulador *= numeros;
-  }
-
-  // console.log(numero);
 }
 
-conta("+", 0, 20, 30, 40, 50); // dessa forma tudo depois de 0 pertence á 'numeros'
-conta("+", 0, [10, 20, 30, 40]); // dessa forma também, porém assim não precisa dos três pontinhos
+conta("*", 2, 20, 30, 40, 50); // dessa forma tudo depois de 0 pertence á 'numeros'
+// conta("+", 0, [10, 20, 30, 40]); dessa forma também, porém assim não precisa dos três pontinhos
 
 // refatorando...
 
@@ -46,4 +47,4 @@ const calculo = (operador, acumulador, numeros) => {
   }
 };
 
-calculo("-", 1, [20, 30, 40, 50]);
+calculo("+", 1, [20, 30, 40, 50]);

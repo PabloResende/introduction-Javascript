@@ -21,9 +21,23 @@ function conta(operador, acumulador, ...numeros) {
     acumulador *= numeros;
   }
 
-    console.log(numero);
+  // console.log(numero);
 }
 
 conta("+", 0, 20, 30, 40, 50); // dessa forma tudo depois de 0 pertence á 'numeros'
-conta("+", 0, [10, 20, 30, 40]); // dessa forma também porém assim não precisa dos três pontinhos
+conta("+", 0, [10, 20, 30, 40]); // dessa forma também, porém assim não precisa dos três pontinhos
 
+// refatorando...
+
+const error = "número, operador ou acumulador inválido";
+
+const calculo = (operador, acumulador, numeros) => {
+  for (let numero of numeros) {
+    operador === "+" ? (acumulador += numeros) : error && operador === "*"
+      ? (acumulador *= numeros)
+      : error; 
+      console.log(acumulador)
+  }
+};
+
+calculo("+", 1, [20, 30, 40, 50]);

@@ -1,28 +1,24 @@
-const erro = "número, operador ou acumulador inválido";
+const operador = "*";
+const numeros = [10, 20, 30];
+let acumulador = 2;
 
-const calculo = (operador, acumulador, numeros) => {
-  for (let numero of numeros) {
-    operador === "+"
-      ? (acumulador += numero)
-      : operador === "*"
-      ? (acumulador *= numero)
-      : operador === "/"
-      ? (acumulador /= numero)
-      : operador === "-"
-      ? (acumulador -= numero)
-      : erro;
-    console.log(acumulador);
-  }
-};
+for (let numero of numeros)
 
-calculo("+", 1, [20, 30, 40, 50]);
-
-// refatorar essa bagaça kk
-
-const error = "invalid number or operator";
-
-const accumulator = 0;
-
-const calculation = (operator, number) => {
-  
+switch (operador) {
+  case "+":
+    acumulador += numero;
+    break;
+  case "-":
+    acumulador -= numero;
+    break;
+  case "*":
+    acumulador *= numero;
+    break;
+  case "/":
+    acumulador /= numero;
+    break;
+  default:
+    throw new console.error('número ou operador inválido');
 }
+
+console.log(acumulador)

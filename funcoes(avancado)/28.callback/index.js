@@ -1,7 +1,7 @@
 function rand(min = 1000, max = 3000) {
     const num = Math.random(max * min) + min;
     return Math.floor(num)
-}
+} // função exageradamente complexa para gerar número aleatório
 
 function f1() {
     setTimeout(function(){
@@ -25,3 +25,5 @@ f1()
 f2()
 f3()
 console.log('olá')
+
+// resumidademnte. callback é quando por exemlo uma função chama outra função ao final da execução

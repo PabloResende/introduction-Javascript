@@ -7,7 +7,7 @@ const criaPessoa = (nome, sobrenome, idade, peso, altura) => {
     altura,
     get nomeCompleto() {
       return `${this.nome} ${this.sobrenome}`;
-    },
+    }
   };
 };
 

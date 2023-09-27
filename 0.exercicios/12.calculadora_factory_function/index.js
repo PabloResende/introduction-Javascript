@@ -14,6 +14,24 @@ function criaCalculadora() {
       this.clickBotoes();
     },
 
+    realizaConta() {
+      let conta = this.display.value;
+
+      try {
+        conta = eval(conta);
+
+        if (!conta) {
+          alert("conta inválida");
+          return;
+        }
+
+        this.display.value = String(conta);
+      } catch (e) {
+        alert("conta inválida");
+        return;
+      }
+    },
+
     clickBotoes() {
       document.addEventListener("click", (e) => {
         const el = e.target;
@@ -28,6 +46,10 @@ function criaCalculadora() {
 
         if (el.classList.contains("btn-dell")) {
           this.apagaUm();
+        }
+
+        if (el.classList.contains("btn-eq")) {
+            this.realizaConta()
         }
       });
     },

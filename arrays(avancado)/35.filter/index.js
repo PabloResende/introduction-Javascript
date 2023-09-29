@@ -1,21 +1,33 @@
-// normal:
+// Filter -> sempre retorna a mesma quantiade de elementos
+// retorna números maiores que 10 (nesse exemplo, não é uma regra)
+// normal
 
-const numero = [1, 20, 50, 2, 4, 6, 70, 80, 8, 9, 0, 15, 12];
+const numbers = [1, 20, 50, 2, 4, 6, 70, 80, 8, 9, 0, 15, 12];
 
-function callBackFilter(valor) {
-  if (valor > 10) {
+function callBackFilter(value) {
+  if (value > 10) {
     return true;
   } else {
     return false;
   }
 }
 
-const retornaFiltrados = numero.filter(callBackFilter);
-console.log(retornaFiltrados);
+const returnFilter = numbers.filter(callBackFilter);
+console.log(returnFilter);
 
-// melhor:
+// or
 
-const numeros = [1, 20, 50, 2, 4, 6, 70, 80, 8, 9, 0, 15, 12];
+const betterReturnFilter = numbers.filter((value) => value > 10);
+console.log(betterReturnFilter);
 
-const retornaFiltradosClean = numeros.filter((valor) => valor > 10);
-console.log(retornaFiltradosClean);
+// outro exemplo:
+
+const pessoa = [
+  { nome: "Maria", idade: 20 },
+  { nome: "Jão", idade: 90 },
+  { nome: "Beto", idade: 2 },
+  { nome: "Gabriela", idade: 16 },
+  { nome: "Luiz", idade: 30 },
+  { nome: "Marco", idade: 5 },
+];
+

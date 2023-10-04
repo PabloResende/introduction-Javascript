@@ -1,6 +1,8 @@
 const data = new Date("1987-04-20 00:00:00");
 const diaSemana = data.getDay();
 
+// em javascript e outras linguagens, os dias da semana, meses entre outros casos, começam no zero, e isso confundi o usuário e não deve ser usado sem um 'filtro', então para 'corrigir' isso foi usado o switch/case:
+
 switch (diaSemana) {
   case 0:
     diaSemanaTexto = "domingo";

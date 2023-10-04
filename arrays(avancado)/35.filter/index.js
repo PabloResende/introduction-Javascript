@@ -1,3 +1,5 @@
+// filter retorna um novo array
+// recebe função de callback
 // Filter -> sempre retorna a mesma quantiade de elementos
 // retorna números maiores que 10 (nesse exemplo, não é uma regra)
 // normal

@@ -32,6 +32,7 @@ const comIdsCopia = pessoa.map((obj, id) => {
   return newObjeto; // dessa forma estou copiando o objeto para não mudar o original
 });
 
+
 console.log(nomePessoa);
 // [ 'Maria', 'Jão', 'Beto', 'Gabriela', 'Luiz', 'Marco' ]
 console.log(nomeIdade);

@@ -38,4 +38,4 @@ const obj = {
   },
 };
 
-obj.falar()
+obj.falar();

@@ -12,7 +12,7 @@ try {
 function retornaHora(data) {
   if (data && !(data instanceof Date)) {
     // confere se a data foi enviado e se ela é uma instância de Date
-    throw new TypeError("esperando instância de Date"); // se não for uma instância de Date retorna esse erro // throw retorna um erro de tipo, útil para pq é mais específico
+    throw new TypeError("esperando instância de Date"); // se não for uma instância de Date retorna esse erro // throw retorna um erro de tipo, útil pq é mais específico
   }
 
   if (!data) {

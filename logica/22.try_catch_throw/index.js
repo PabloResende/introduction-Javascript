@@ -1,4 +1,4 @@
-// quando se sabe que o código pode gerar um erro, se usa tru catch para que o usuário não veja o erro no console
+// quando se sabe que o código pode gerar um erro, se usa try/catch para que o usuário não veja o erro no console
 
 try {
   console.log(naoExisto);

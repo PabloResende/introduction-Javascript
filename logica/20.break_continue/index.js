@@ -12,7 +12,7 @@ if (numero === 4) {
 }
 
 if (numero === 9) {
-    break
+    break // se break for true para aqui
 }
     
     console.log(numero)

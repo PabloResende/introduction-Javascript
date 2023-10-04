@@ -12,7 +12,7 @@ function callBackFilter(value) {
   }
 }
 
-const returnFilter = numbers.filter(callBackFilter); // callBackFilter não está sendo executada, isso porque quem está fazendo isso é o 'filter', basicamente, para cada elemento do array o 'filter' executa a função 'callBackFilter' 
+const returnFilter = numbers.filter(callBackFilter); // callBackFilter não está sendo executada, isso porque quem está fazendo isso é o 'filter', basicamente, para cada elemento do array o 'filter' executa a função 'callBackFilter'
 console.log(returnFilter);
 
 // or
@@ -31,3 +31,11 @@ const pessoa = [
   { nome: "Marco", idade: 5 },
 ];
 
+const pessoaNomeGrande = pessoa.filter((obj) => obj.nome.length >= 5);
+const pessoaMaisVelhas = pessoa.filter((obj) => obj.idade >= 20);
+const nomeTerminaComA = pessoa.filter((obj) =>
+  obj.nome.toLocaleLowerCase().endsWith("a")
+);
+console.log(pessoaNomeGrande);
+console.log(pessoaMaisVelhas);
+console.log(nomeTerminaComA);

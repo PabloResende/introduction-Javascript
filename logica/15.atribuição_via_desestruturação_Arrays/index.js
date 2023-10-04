@@ -1,6 +1,5 @@
 // atribuição via desestruturação;
 
-
 let a = 'A'
 let b = 'B'
 let c = 'C'

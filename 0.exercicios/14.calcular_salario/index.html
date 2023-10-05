@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Calcular Salário</title>
-</head>
-<body>
-    <input type="text" id="dias" placeholder="Digite um número de dias">
-    <button id="calcular">Calcular</button>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <input type="number" id="dias" placeholder="Digite um número de dias" />
+      <button id="calcular">Calcular</button>
+      <p id="resultado"></p>
+      <input id="meses" type="text" placeholder="digite os meses de trabalho" />
+      <button id="calcularDecimo">Calcular</button>
+      <p id="decimo"></p>
+    </section>
 
-    <p id="resultado"></p>
-
-    <script src="./index.js"></script>
-</body>
+    <script src="./salarioBase.js"></script>
+    <script src="./decimoTerceiro.js"></script>
+  </body>
 </html>

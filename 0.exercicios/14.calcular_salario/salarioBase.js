@@ -1,4 +1,3 @@
-// Função para calcular o salário
 function calcularSalario(numeroDias) {
     return numeroDias * 45;
 }

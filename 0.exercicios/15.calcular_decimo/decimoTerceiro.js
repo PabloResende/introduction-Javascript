@@ -1,4 +1,4 @@
-function calcularDecimo(numeroMeses) {
+function calcularDecimo(numeroMeses) { 
     return (1350 / 12) * numeroMeses;
 }
 

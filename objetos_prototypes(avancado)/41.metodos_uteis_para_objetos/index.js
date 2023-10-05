@@ -1,9 +1,9 @@
 /*
 
 Object.values
-Object.entries
+Object.entries ( mostra os valores do objeto em um array)
 Object.assign(des, any)
-Object.getOwnPropertyDescriptor(o, 'prop')
+Object.getOwnPropertyDescriptor (o, 'prop' // retorna as propriedades do objeto, isto é, se o objeto é writable, configurable entre outras)
 
 // já vimos:
 
@@ -33,8 +33,9 @@ console.log(produto); // { nome: 'produto', preco: 1.28 }
 console.log(caneca); // { nome: 'Caneca', preco: 2.3, material: 'porcelana' }
 console.log(copo); // { nome: 'Copo', preco: 4, material: 'vidro' }
 
-// 
+//
 
-const carro = {marca: 'Mercedez', preco: 500.000}
-Object.freeze(carro) // com isso nada do objeto 'carro' pode ser alterado
+const carro = { marca: "Mercedez", preco: 500000 };
+Object.freeze(carro); // com isso nada do objeto 'carro' pode ser alterado
 
+const nave = { modelo: "AE-27", preco: 5000000 };

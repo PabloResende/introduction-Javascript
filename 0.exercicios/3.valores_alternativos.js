@@ -8,11 +8,11 @@ let varC = 'c';
 const varAtemp = varA;
 
 varA = varB;
-varB = varC; 
+varB = varC;
 varC = varAtemp;
 
 console.log(varA, varB, varC);
 
 //maneira antiga de fazer
-//jeito melhor: 
+//jeito melhor:
 // [varA, varB, varC] = [varB, varC, varA]

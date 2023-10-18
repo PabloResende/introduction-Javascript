@@ -6,4 +6,4 @@ let imc = peso / (altura * altura);
 
 console.log( nome, 'tem', peso, 'kgs, mede', altura, 'e seu IMC é de', imc);
 
-//resultado é 21
+//resultado é 21 

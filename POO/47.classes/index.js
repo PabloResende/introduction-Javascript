@@ -7,3 +7,19 @@ class Pessoa {
     }
 }
 
+const p1 =  new Pessoa('Pablo', 'Silva')
+console.log(p1)
+
+// outro exemplo de classe
+
+class Carro {
+    constructor(marca, cor, ano) {
+        this.marca = marca;
+        this.cor = cor;
+        this.ano = ano;
+    }
+}
+
+const carro1 = new Carro('ford','azul',2002)
+console.log(carro1)
+

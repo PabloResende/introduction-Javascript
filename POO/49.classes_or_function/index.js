@@ -224,3 +224,52 @@ module.exports = (request, response, next) {
     next();
 }
 
+// segunda fonte: https://pt.stackoverflow.com/questions/507892/diferen%C3%A7a-sint%C3%A1tica-entre-classes-e-fun%C3%A7%C3%B5es-construtoras-em-javascript
+
+/*
+
+Costuma-se pensar erroneamente que tudo aquilo que é delimitado por chaves ({ e }) é um bloco. E isso não é sempre o caso.
+
+Obviamente não se aplica aos objetos literais, que também usam as chaves para denotar sua sintaxe.
+
+As chaves que seguem class também não são um "bloco" propriamente dito, haja vista que blocos, de acordo com a documentação:
+
+Um bloco (ou declaração composta em outras linguagens) é usado para agrupar zero ou mais declarações. O bloco é delimitado por um par de chaves.
+
+E para a classe, as chaves delimitam o corpo da classe (não confundir com bloco) que, de acordo com a sintaxe da linguagem, contém uma "lista de elementos da classe", que, por sua vez, podem ser a definição de um método ou a definição de um método estático.
+
+Portanto, de acordo com as regras sintáticas da linguagem:
+
+Um bloco pode conter um conjunto de qualquer declaração da linguagem (tal como declarações if, const, for, while, etc).
+O corpo de uma classe pode conter apenas definições de métodos.
+Note que, mediante aprovação da class fields proposal, a "lista de elementos de classe" expandir-se-á para também acomodar propriedades, de modo que será possível declarar, no corpo de uma classe, métodos e propriedades diretamente.
+
+Então, respondendo à sua pergunta:
+
+Sintaticamente falando, classes e funções construtoras são diferentes ao ponto de que classes delimitam o corpo de uma classe (que pode definir métodos), enquanto funções construtoras delimitam o bloco de uma função (que pode conter qualquer tipo de declaração).
+Desse modo, isto não funciona:
+
+class Foo {
+  const bar = 'baz';
+}
+Tendo em vista que const denota uma declaração, que é inválida dentro do corpo de uma classe.
+
+Você poderia, no entanto, declarar um método (analogamente à função construtora seria o método constructor) que, por sua vez, poderia conter a declaração de variável.
+
+Isso tudo é um pouco da sintaxe do JavaScript. Nesse sentido, você só pode fazer aquilo descrito pela sintaxe da linguagem. É a mesma coisa que fazer um while for if e esperar que dê certo.
+
+Então, seguindo as normas sintáticas... Este código:
+*/
+
+function Teste() {
+  const nome = 'Bruno';
+  this.nomeAtributo = nome;
+}
+// Escrito com a sintaxe class fica assim:
+
+class Teste {
+  constructor() {
+    const nome = 'Bruno';
+    this.nomeAtributo = nome;
+  }
+}

@@ -34,5 +34,10 @@ waitPlease("Tentando conexão com o banco...", rand(1, 3))
 );
   })
   .catch((error) => {
-    console.log(error);
-  });
+    console.log(error); 
+  }); // nada é executado após o erro
+
+// Promise.all mostra todas as promeses juntas
+// Promise.race retorna o que tiver pronto primeiro, mas continua executando
+
+

@@ -15,4 +15,5 @@ console.log(varA, varB, varC);
 
 //maneira antiga de fazer
 //jeito melhor: 
-// [varA, varB, varC] = [varB, varC, varA]
+
+[varA, varB, varC] = [varB, varC, varA]

@@ -1,3 +1,5 @@
+// uma promisse dá forma mais simples:
+
 i = 10;
 
 return new Promise((resolve, reject) => {
@@ -8,7 +10,7 @@ return new Promise((resolve, reject) => {
   }
 });
 
-// uma promisse dá forma mais simples o possível
+// forma bizarramente complexa:
 
 const genero = {
   homem: "homem",

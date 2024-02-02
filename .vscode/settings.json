@@ -2,6 +2,8 @@
     "cSpell.words": [
         "Anna",
         "pablo",
-        "typeoff"
-    ]
+    ],
+
+    "editor.fontFamily": "Fire Code",
+    "editor.fontLigatures": true
 }
